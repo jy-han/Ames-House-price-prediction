@@ -6,15 +6,15 @@ Solution Linear Regression model: Ridge L2, Lasso L1.
 The solution flow contains:
 1. Read the data and dicovery
 2. Feature engineering
- 1) Check outliers and remove them
- 2) Solving the missing value by fill with median or average or 0 depend on features
- 3) Make some numerical features to categories
- 4) Encode some categorical features as ordered numbers when there is information in the order
- 5) Create new features: simplifications of existing features, combinations of existing features
- 6) Find most important features relative to target, polynomials on the top 10 existing features
+ - Check outliers and remove them
+ - Solving the missing value by fill with median or average or 0 depend on features
+ - Make some numerical features to categories
+ - Encode some categorical features as ordered numbers when there is information in the order
+ - Create new features: simplifications of existing features, combinations of existing features
+ - Find most important features relative to target, polynomials on the top 10 existing features
 3. Select models
- 1) Default model with r2_scores, got 0.89 on test
- 2) Ridge(l2) model with r2_scores, got 0.905 with tuned alpha of 17.825
- 3) Lasso(l1) model with r2_scores, got 0.904 with tuned alpha of 160
+ - Default model with r2_scores, got 0.89 on test
+ - Ridge(l2) model with r2_scores, got 0.905 with tuned alpha of 17.825
+ - Lasso(l1) model with r2_scores, got 0.904 with tuned alpha of 160
 ***************************************************************
 Observe performance on test data, the ridge model is best for price task.
